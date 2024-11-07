@@ -1,0 +1,59 @@
+/*
+Thuộc tính border-radius  ===> Bo góc
+Nếu hình vuông  ==> border-radius: 50% trở lên ===> THành hình tròn
+
+Lưu ý:
+- Nếu dùng đơn vị % ==> Tỷ lệ theo width thẻ chá
+- Nếu phần tử là inline  ===> Không padding-to và bottom được
+*/
+
+/* .box {
+    border: 5px solid red;
+    /* border-radius: 10px 20px 30px 40px; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 40px;
+  
+} */
+
+/* .btn {
+    background: green;
+    color: #fff;
+    border: 0;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 99px;
+}
+
+.btn-sm {
+    height: 25px;
+}
+
+.btn-lg {
+    height: 199px;
+} */
+
+/* .box {
+    background-color: yellowgreen;
+    width: 400px;
+    aspect-ratio: 4 / 3;
+} */
+
+/* .box .box-inner {
+    padding-top: 56.25%;
+} */
+
+
+p {
+    margin: 0;
+    border: 1px solid red;
+}
+
+a {
+    border: 1px solid red;
+    text-decoration: none;
+    padding-top: 20px;
+    display: inline-block;
+}

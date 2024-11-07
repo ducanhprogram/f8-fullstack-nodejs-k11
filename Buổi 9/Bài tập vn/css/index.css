@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+ul li, ol li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.dropdown {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.menu {
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.menu .menu-item {
+    border: 4px solid #fff;
+    outline: 2px solid #ccc;
+    position: relative;
+}
+
+
+.menu li.space {
+    flex-grow: 1;
+}
+
+.menu .menu-item:hover {
+    background: #4a9fd5;
+    
+}
+
+.menu li span {
+    padding: 0 8px;
+}
+
+.menu .menu-item > a { 
+    padding: 20px 20px;
+    display: inline-block;
+    color: #525050;
+}
+
+.menu .menu-item:hover > a {
+    color: #fff;
+}
+
+.menu .menu-item:hover .sub-menu {
+    display: block;
+}
+
+.menu-item .sub-menu {
+    position: absolute;
+    width: 200px;
+    box-shadow: 0px 0px 15px 13px rgba(12, 11, 11, 0.1);
+    top: 70px;
+    left: -10px;
+    /* display: none; */
+}
+
+
+.menu-item .sub-menu::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 10px solid;
+    border-color: transparent transparent #fff ; 
+    top: -19px;
+    left: 20px;
+}
+
+.menu-item .sub-menu li a {
+    display: inline-block;
+    padding: 15px;
+}
+
+.menu-item .sub-menu li:not(:first-child) {
+    border-top: 1px solid #ccc;
+}
+
+.menu-item .sub-menu li:hover {
+    background: #4a9fd5;
+}
+
+.menu-item .sub-menu li:hover i {
+    font-size: 18px;
+    color: #fff;
+}
+
+.menu-item .sub-menu li:hover a {
+    color: #fff;
+}

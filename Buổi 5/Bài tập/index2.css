@@ -1,0 +1,34 @@
+
+.accordion-title {
+    display: block;
+    background: orange;
+    padding: 10px 0;
+    margin-bottom: 10px;
+
+}
+
+
+.accordion-item p {
+    display: none;
+}
+
+.accordion-item .accordion-title .fa-minus {
+    display: none;
+}
+
+input:checked ~ .accordion-title .fa-minus {
+    display: inline-block;
+}
+
+
+input:checked ~ p {
+    display: block;
+}
+
+input:checked ~ .accordion-title .fa-plus {
+    display: none;
+}
+
+i.fa-solid  {
+   padding: 0 10px;
+}

@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&display=swap");
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Lato", sans-serif;
+}
+
+section {
+    margin: 50px auto;
+    width: 550px;
+}
+
+section h1 {
+    margin-bottom: 30px;
+    font-size: 34px;
+}
+
+section .desc {
+    line-height: 25px;
+}
+
+section p span {
+    color: orange;
+}
+
+.form {
+    margin-top: 30px;
+}
+
+.form .form-group {
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+    margin-bottom: 40px;
+}
+
+.input-message {
+    padding: 14px;
+    background-color: #333;
+    position: absolute;
+    color: #fff;
+    top: -71px;
+    left: 54px;
+    display: none;
+}
+
+.input-message::after {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    background: #333;
+    transform: rotate(45deg);
+    bottom: -8px;
+    left: 20px;
+}
+
+.form .form-group input{
+    padding: 18px;
+    font-size: 18px;
+    width: 100%;
+    border: 1px solid #dddddd;
+}
+
+.form-group label {
+    background: #dddddd;
+    width: 58px;
+    height: 58px;
+    text-align: center;
+    line-height: 58px;
+    font-size: 24px;
+}
+
+.form .form-group input:not(input[type="checkbox"]):focus, .form .form-group input:not(input[type="checkbox"]):hover {
+    border-color: #000;
+}
+
+
+input:not(input[type="checkbox"]):focus ~ label, input:not(input[type="checkbox"]):hover ~ label {
+    background: #000;
+}
+
+.form-group .icon {
+    background: none;
+    color: #fff;
+}
+
+.form-group .star {
+    position: absolute;
+    top: 50%;
+    translate:-20px -50%;
+    color: #ccc;
+    font-size: 10px;
+}
+
+.form-group select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+     appearance: none;
+
+}
+
+
+textarea,
+input:not(input[type="checkbox"]),
+select {
+  width: 100%;
+  height: 58px;
+  border: 1px solid #dddddd;
+  outline: none;
+  padding: 0 20px;
+  color: #929090;
+  font-size: 18px;
+}
+
+
+textarea {
+    padding-top: 20px;
+    height: 240px;
+    resize: none;
+}
+
+.form-group .label-long {
+    height: 240px;
+}
+
+.label-long ~ .star {
+    top: 10%;
+}
+
+
+input:focus ~ p {
+    display: block;
+}
+
+.message:focus ~ p {
+    display: block;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row button {
+    background: red;
+    color: #fff;
+    border: none;
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.row .send-message {
+    color: #ababab;
+    position: relative;
+    left: 40px;
+    line-height: 27px;
+    
+}
+
+.row .send-message::before {
+    content: "";
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    border: 1px solid #ababab;
+    margin-left: 10px;
+    position: absolute;
+    top: 0;
+    left: -50px;
+}
+
+.row .send-message::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 8px;
+    height: 15px;
+    border-color: #000;
+    border-width: 0 3px 3px 0;
+    border-style: solid;
+    top: 2px;
+    left: -30px;
+    rotate: 45deg;
+    display: none;
+}
+
+.row input[type="checkbox"]:checked + .send-message::after {
+    display: block;
+}
+
+textarea:focus ~ .label-long, textarea:hover ~ .label-long {
+    background: #000;
+}
+
+
+textarea:focus, textarea:hover {
+    border-color: #000;
+}

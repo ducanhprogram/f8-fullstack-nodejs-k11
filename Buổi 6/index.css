@@ -1,0 +1,30 @@
+/*
+background-attachment: scroll | fixed
+background: color image repeat position / size attachment;
+*/
+
+
+body {
+    height: 2000px;
+    /* background-image: url(https://toquoc.mediacdn.vn/280518851207290880/2022/12/22/12-1671683430473740576022.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed; */
+    background:#000 url(https://toquoc.mediacdn.vn/280518851207290880/2022/12/22/12-1671683430473740576022.jpg) no-repeat 0 0 / cover fixed;
+
+}
+
+
+section {
+    padding: 30px 0;
+}
+
+
+.banner {
+    height: 300px;
+        background-image: url(https://toquoc.mediacdn.vn/280518851207290880/2022/12/22/12-1671683430473740576022.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: 0 100px;
+}

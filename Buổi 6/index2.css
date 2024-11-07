@@ -1,0 +1,22 @@
+.box {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 50px 50px 50px;
+    border-color: transparent transparent blue blue;
+}
+
+.btn {
+    color: green;
+    border: 1px solid currentColor;
+    background: none;
+    width: 100px;
+    height: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: green;
+    color: #fff;
+}

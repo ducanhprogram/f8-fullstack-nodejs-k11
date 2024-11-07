@@ -1,0 +1,53 @@
+/* #title {
+    color: red;
+}
+
+.sub-title {
+    color: green
+}
+
+h3 {
+    color: violet
+} */
+
+/* .box .title {
+    color: red
+}
+
+.wrapper .title {
+    color: blueviolet;
+}
+
+.menu > li {
+    color: violet
+}
+
+
+div.content {
+    color: red;
+}
+
+section.content {
+    color: blue
+} */
+
+/* p ~ h2 {
+    color: red;
+}
+
+p + div h2 {
+    color: green;
+} */
+
+/* p + h2 + h2 {
+    color: red;
+} */
+
+/* h2 + h2 {
+    color: red
+} */
+
+.todos input:checked + span {
+    color: red;
+    text-decoration: line-through;
+}

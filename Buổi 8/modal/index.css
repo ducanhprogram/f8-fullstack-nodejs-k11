@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.modal-notification {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    z-index: 10;
+    display: none;
+}
+
+
+.modal-notification .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+
+.modal-notification label i {
+    cursor: pointer;
+} 
+
+.overlay {
+    background: #272727b6;
+    position: absolute;
+    inset: 0;
+    display: none;
+}
+
+input:checked ~ .overlay {
+    display: block;
+}
+
+input:checked ~ .modal-notification {
+    display: block;
+}

@@ -1,0 +1,82 @@
+/*
+Thuộc tính float: Trôi các phần tử html về phía bên trái, bên phải thành phần cha 
+- none  --> Không trôi
+- left: trái
+- right: phải
+
+Thuộc tính clear  --> Khặc phục tự động trôi của float
+-left
+-right
+-both
+
+Lưu ý: Clear chỉ hoạt động với thẻ block
+*/
+
+/* 
+.box {
+    width: 500px;
+    margin: 30px auto;
+    border: 1px solid red;
+    overflow: auto;
+}
+
+.block-1 {
+    background: green;
+    width: 100px;
+    height: 50px;
+    float: left;
+
+}
+
+.block-2 {
+    background: blueviolet;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.block-3 {
+    background: yellow;
+    width: 100px;
+    height: 70px;
+    float: left;
+}
+
+.block-4 {
+    
+    background: red;
+    height: 60px;
+    clear: both;
+}
+
+.clear {
+    display: block;
+    clear: both;
+} */
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.box {
+    margin: 50px auto;
+    width: 550px;
+    height: auto;
+    border: 1px solid red;
+    padding: 20px;
+    overflow: auto;
+}
+
+img {
+    display: block;
+    width: 200px;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+    /* margin: 10px; */
+    border-radius: 50%;
+    shape-outside: ellipse();
+
+}

@@ -1,0 +1,41 @@
+/*
+margin  ==> Căn lề
+
+Đơn vị % ===> Tỷ lệ theo width của thẻ cha
+KHông hỗ trợ top, bottom với thẻ inline
+Có giá trị auto, có giá trị âm
+
+THu hẹp lề:
+1. Th1: Phần tử trên và phần tử dưới 
+- Cùng dấu ==> Lấy trị tuyệt đối giá trị lớn hơn
+- Trái dấu  ==> Cộng lại
+
+2. TH2. Phần tử lồng nhau (Cha con)
+*/
+
+
+/* .box {
+    width: 200px;
+    border: 1px solid red;
+    padding: 10px;
+    margin-bottom: 20px ;
+}
+
+.box-2 {
+    border: 5px solid green;
+    margin-top: -10px;
+} */
+
+.box {
+    background: green;
+    color: #fff;
+    /* border: 1px solid green; */
+    display: inline-block;
+    width: 100%;
+}
+
+.box span {
+    display: block;
+    font-size: 2rem;
+    margin: 30px 0;
+}

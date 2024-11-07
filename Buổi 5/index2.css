@@ -1,0 +1,145 @@
+/*
+Đơn vị trong css
+1.Tuyệt đối
+- pixel (px)
+- point (pt)   1pt  = 1.3333px
+
+2. Tương đối
+- em  --> Tỷ lệ với thành phần cha
+- rem  --> Tỷ lệ với trình duyệt
+- %   --> Tỷ lệ với thành phần cha
+- vh  --> Tỷ lệ với chiều cao của viewport
+- vw   ---> Tỷ lệ với chiều rộng của viewport
+
+
+Thuộc tính font-size: Thay đổi cỡ chữ của vẵn bản
+Cú pháp: font-size: value + unit;
+
+
+THuộc tính font-family: Thay đổi font chữ của văn bản
+
+Họ font:
+sans-serif  ==> Họ font không chân
+serif   ==> họ font có chân
+ */
+
+ /* @font-face {
+    font-family: "Poppin";
+    src: url(./Poppins/Poppins-Thin.ttf)
+ }
+
+ @font-face {
+    font-family: "Poppin";
+    src: url(./Poppins/Poppins-SemiBold.ttf)
+}
+
+ @font-face {
+    font-family: "Poppin";
+    src: url(./Poppins/Poppins-Regular.ttf);
+    font-weight: 400;
+ }
+
+@font-face {
+    font-family: "Poppin";
+    src: url(./Poppins/Poppins-Light.ttf);
+    font-weight: 300;
+}
+
+
+@font-face {
+    font-family: "Poppin";
+    src: url(./Poppins/Poppins-Medium.ttf);
+    font-weight: 500;
+}
+
+
+
+@font-face {
+    font-family: "Poppin";
+    src: url(./Poppins/Poppins-Bold.ttf);
+    font-weight: 700
+}
+
+@font-face {
+    font-family: "Poppin";
+    src: url(./Poppins/Poppins-BoldItalic.ttf);
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: "Poppin";
+    src: url(./Poppin/Poppins-Black.ttf);
+    font-weight: 900;
+}
+
+
+@font-face {
+    font-family: "Poppin";
+    src: url(./Poppins/Poppins-LightItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Poppin";
+    src: url(./Poppins/Poppins-BlackItalic.ttf);
+    font-weight: 900;
+    font-style: italic;
+
+} */
+
+
+/*
+Thuộc tính letter-spacing : Thay đổi khoảng cách giữa các ký tự 
+
+Thuộc tính word-spacing: Thay đổi khoảng cách giứa các từ
+
+Thuộc tính text-transform: Thay đổi kiểu hiển thị của chữ (Thường, hoa)
+
+Thuộc tính text-decoration: Thay dổi đường kẻ trong văn bản
+- none
+- underline
+- overline
+- line-through
+
+Thuộc tính text-align: Thay đổi vị trí giá trị văn bản theo chiều ngang
+- left
+- center
+- right
+- justify
+
+Thuộc tính text-align-last: Căn chỉnh vị trí văn bản ở dòng cuối cùng trong đoạn văn
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: -1px;
+    word-spacing: 15px;
+    /* text-transform: capitalize; */
+    /* text-decoration: line-through; */
+    /* text-align: justify;
+    text-align-last: center; */
+}
+
+.content {
+    border: 1px solid red;
+    width: 80%;
+    /* word-wrap: break-word; */
+    word-break: break-all;
+
+}
+
+.btn-wrap {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}

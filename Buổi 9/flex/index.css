@@ -1,0 +1,123 @@
+/*  Các thuộc tính trong nhóm flex container
+- display: flex | inline-flex  --> Kích hoạt flexbox
+- flex-direction: Chọn hướng cho trục chính
++ row ---> Mặc định
++ row-reverse  --> Nằm ngang đảo ngược
++ column  --> Nằm dọc
++ column-reverse  --> Nằm dọc đảo ngược
+- justify-content: Căn chỉnh các item theo hướng song song với trục chính.
++ flex-start
++ flex-end
++ center
++ space-between
++ space-around
++ space-evenly
++ start
++ end
+
+-align-items: Căn chỉnh các item theo hướng song song với trục cross (Vuông góc với trục chính)
++ fles-start
++ flex-end
++ center
++ baseline
++ stretch --> Mặc định
+- flex-wrap  --> wrap các item
++ nowrap
++ wrap
++ wrap-reverse
+- align-content  --> Điều chỉnh các hàng (cột) theo hướng vuông góc với trục chính (Chỉ áp dụng khi có nhiều hàng hoặc cột)
++ strech( mặc định)
++ flex-start
++ flex-end
++ center
++ space-between
++ space-around
++ space-evenly
+-gap: Căn chỉnh khoảng cách giữa các item
+row-gap: căn chỉnh khoảng cách theo hàng
+- column-gap: căn chỉnh khoảng cách theo cột
+
+Các thuộc tính trong nhóm flex-item
+- flex-grow: number  ===> Lấp đầy các khoảng cách còn trống của container
+++ flex-grow: 0; phần tử sẽ không giãn ra dù có không gian trống.
+++ flex-grow: 1; (> 0) Phần từ sẽ giãn ra để chiếm thêm không gian. Tỷ lệ sẽ phân chia
+
+
+- flex-shrink: numer ==> Tự động co lại khi kích thước các item vượt quá kích thước của container 
+
++++ flex-shrink: 0;  (Giữ nguyên kích thước).  các phần tử không thu nhỏ lại, ngay cả khi không gian container bị thu nhỏ, hạn chế. 
+++ flex-shrink: 1; các phần tử sẽ co lại để vừa với không gian còn lại. 
+
+- flex-basic: Thiết lập kích thước ban đầu cho item
+Lưu ý: Bị chặn bởi min-width, max-width, min-height, max-height
+
+- flex: grow shrink basis
+
+- order: Sắp xếp các item theo thứ tự mong muốn (mặc định là 0)
+
+- align-self: Căn chỉnh theo hướng vuông góc với trục chính (Giống align-items)
+(Mặc định stretch)
++ flex-start
++ flex-end
++ center
++ baseline
++ stretch
+*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    margin: 30px auto;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+.item {
+    /* width: 300px; */
+    background: green;
+    color: #fff;
+    border: 1px solid #fff;
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+    /* flex-basis: 10px; */
+    flex: 0 1 100px;
+}
+
+/* .item:nth-child(1) {
+    order: 3;
+}
+
+.item:nth-child(2) {
+    order: 2;
+}
+
+.item:nth-child(3) {
+    order: 0;
+}
+
+.item:nth-child(4) {
+    order: -1;
+}
+
+.item:nth-child(5) {
+    order: 1;
+} */
+
+/* .item {
+    align-self: center;
+} */
+
+.item:nth-child(5) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

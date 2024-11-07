@@ -1,0 +1,74 @@
+/*
+Cú pháp phần tử giả::
+selector::tenphantu {
+    Code css
+}
+
+- before
+- after
+- first-line
+- selection
+- placeholder
+
+
+
+ */
+
+
+ body {
+    height: 2000px;
+ }
+
+ /* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-radius: 5px;
+  }
+
+ h1::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: green;
+    border-radius: 50%;
+ }
+
+ h1::after {
+    content: ">";
+ }
+
+
+p::first-line {
+    color: red;
+}
+
+p::first-letter {
+    color: green;
+}
+
+p::selection {
+    /* background: black; */
+    color: tomato;
+  
+}
+
+input::placeholder {
+    color: red;
+    font-style: italic;
+}

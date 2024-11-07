@@ -1,0 +1,38 @@
+body {
+
+    font-family: sans-serif;
+    background-image: url(https://i.ytimg.com/vi/x0fSBAgBrOQ/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    height: 100vh;
+}
+
+
+
+
+.content {
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    background-color: #9a96bbb6;
+    border-radius: 5px;
+    position: absolute;
+    left: 40%;
+    top: 23%;
+}
+
+.content h1 {
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.content p {
+    font-weight: 900;
+    font-size: 14px;
+}
+
+
+.content p span {
+    text-decoration: underline;
+}

@@ -1,0 +1,32 @@
+
+
+.Heart-shaped {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 200px auto;
+    position: relative;
+    rotate: 45deg;
+}
+
+.Heart-shaped::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+    top: 0;
+    left: -50%;
+}
+
+.Heart-shaped::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+    top: -50%;
+    left: 0;
+}

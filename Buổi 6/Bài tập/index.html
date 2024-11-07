@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./index.css" />
+    </head>
+    <body>
+        <section>
+            <h1>Hey there</h1>
+            <p class="desc">
+                <span>Lorem ipsum dolor sit amet consectetur</span> adipisicing
+                elit. Vel, eligendi dolore eos ullam iusto aliquid. Ea,
+                recusandae perferendis quam tenetur ut molestias animi. Beatae
+                exercitationem, quam ducimus architecto a ea!
+            </p>
+
+            <form action="" class="form">
+                <div class="form-group">
+                    <input
+                        type="text"
+                        class="fullName"
+                        id="fullName"
+                        placeholder="Your name"
+                    />
+                    <p class="input-message">Enter your name</p>
+                    <label for="fullName"
+                        ><i class="fa-regular fa-user icon"></i
+                    ></label>
+                    <i class="fa-solid fa-star star"></i>
+                </div>
+
+                <div class="form-group">
+                    <input
+                        type="email"
+                        class="emailName"
+                        id="emailName"
+                        placeholder="your@domain.com"
+                        required
+                    />
+                    <p class="input-message">Enter your email</p>
+                    <label for="emailName">
+                        <i class="fa-solid fa-envelope icon"></i>
+                    </label>
+                    <i class="fa-solid fa-star star"></i>
+                </div>
+
+                <div class="form-group">
+                    <input
+                        type="number"
+                        class="phone"
+                        id="phone"
+                        placeholder="+4400123"
+                        required
+                    />
+
+                    <p class="input-message">Enter your phone</p>
+                    <label for="phone">
+                        <i class="fa-solid fa-mobile-screen icon"></i>
+                    </label>
+                    <i class="fa-solid fa-star star"></i>
+                </div>
+
+                <div class="form-group">
+                    <select name="subject" id="subject">
+                        <option value="0">Subject</option>
+                        <option value="1">Math</option>
+                        <option value="2">History</option>
+                        <option value="3">English</option>
+                        <option value="4">HTML CSS</option>
+                        <option value="5">Javascript</option>
+                    </select>
+                    <p class="input-message">Enter your subject</p>
+                    <label for="subject">
+                        <i class="fa-solid fa-book icon"></i
+                    ></label>
+                    <i class="fa-solid fa-star star"></i>
+                </div>
+
+                <div class="form-group">
+                    <textarea
+                        name="message"
+                        class="message"
+                        placeholder="Message"
+                        id="message"
+                        cols="30"
+                        rows="10"
+                    ></textarea>
+                    <p class="input-message">Enter your message</p>
+
+                    <label for="message" class="label-long">
+                        <i class="fa-solid fa-message icon"></i>
+                    </label>
+                    <i class="fa-solid fa-star star"></i>
+                </div>
+
+                <div class="row">
+                    <input type="checkbox" id="send-message" hidden />
+                    <label for="send-message" class="send-message"
+                        >Send me a copy of this message</label
+                    >
+                    <button type="submit">SEND</button>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>
