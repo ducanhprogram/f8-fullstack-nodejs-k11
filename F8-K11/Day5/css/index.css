@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-size: 24px;
+}
+
+.container {
+    background: yellow;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    border: 1px solid red;
+    background: orange ; 
+    width: 80px;
+    height: 80px;
+}

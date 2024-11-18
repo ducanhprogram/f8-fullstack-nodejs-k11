@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+ul li, ol li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+}
+
+img {
+    width: 100%;
+}
+
+
+.user-card {
+    width: 562px;
+    margin: 50px auto;
+    display: flex;
+    border: 1px solid #aaa;
+    padding: 50px;
+}
+.user-card .avatar {
+    width: 130px;
+}
+
+.avatar img {
+    width: 100%;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #E6EFFA;
+    padding: 12px;
+}
+
+.user-card .content {
+    padding-top: 24px;
+    width: 330px;
+   padding-left: 16px;
+}
+
+.user-card .content .intro h1 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+.user-card .content .intro{
+    padding-bottom: 28px;
+}
+
+.user-card .content .preview ul li {
+    padding-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.user-card .content .preview img {
+    width: 32px;
+    height: 32px;
+}
+
+.user-card .content .desc {
+    padding-bottom: 28px;
+}
+
+button {
+    background-color: none;
+    border: 2px solid #C4CADF;
+    border-radius: 4px;
+    padding: 10px;
+    color: #1C2B62
+}

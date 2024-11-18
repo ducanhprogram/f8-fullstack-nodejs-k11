@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", serif;
+    color: #000;
+    background: #D8DAE2;
+}
+
+
+ul li, ol li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 250px auto;
+}
+
+.main::before {
+    content: "";
+    width: 300px;
+    height: 284px;
+    position: absolute;
+    border-radius: 26px;
+    background: #E5E7F0;
+    top: -150px;
+    right: 200px;
+    border-radius: 50%;
+    z-index: 0;
+}
+.main {
+    padding: 62px;
+    position: relative;
+    background: #EFF0F1;
+    z-index: 10;
+    border-radius: 26px;
+}
+
+.main h1 {
+    padding-bottom: 24px;
+}
+
+.main .nav .list {
+    display: flex;
+}
+
+.main .nav .list li {
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+.collection-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+}
+
+.collection-list .collection-item {
+    margin-top: 56px;
+    background: #fff;
+    border-radius: 24px;
+    padding: 20px;
+}
+
+
+.collection-list .collection-item .main-img {
+    padding-bottom: 16px;;
+}
+
+.collection-list .collection-item .sub-imgs {
+    display: flex;
+    gap: 12px;
+}
+
+
+.collection-list .collection-item .description {
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.collection-list .collection-item .description h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.collection-list .collection-item .description a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.collection-list .collection-item .description a i {
+    font-size: 22px;
+
+}
