@@ -20,11 +20,16 @@ html {
     font-size: 62.5%;
 }
 
+img {
+    max-width: 100%;
+}
+
 
 body {
     font-size: 1.6rem;
     font-weight: 400;
     font-family: "Poppins", sans-serif;
+    background: #E8E1DA;
 }
 
 button {
@@ -34,11 +39,13 @@ button {
 
 .padding-left-right {
     padding: 0 120px;
+    background: #000;
 }
 
 /*  */
 
 .container {
+    max-width: 100%;
     margin: 40px auto 100px;
 }
 
@@ -47,12 +54,21 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 
 .header .logo {
     width: 20%;
     font-size: 32px;
     /* flex-grow: 1; */
+}
+
+.header .logo a {
+    color: #fff;
 }
 
 .header .nav {
@@ -71,10 +87,165 @@ button {
 
 .header .nav .list li a{
     padding: 10px 20px;
+    color: #fff;
 } 
 
 
-.header button {
+.header .sign-in {
     padding: 10px 28px;
     background: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* end .header */
+
+main {
+    margin-top: 100px;
+}
+
+main .container {
+    padding: 0 120px;
+    max-width: 100%;
+}
+
+main .container .banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .container .banner .banner-content {
+    max-width: 50%;
+    padding-top: 61px;
+}
+
+main .container .banner .banner-content .title {
+    font-size: 55px;
+    font-weight: 600;
+    padding-right: 57px;
+}
+
+
+main .container .banner .banner-content .description {
+    padding-top: 45px;
+    width: 400px;
+}
+
+main .container .banner .banner-content .btn-getStart {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    padding: 25px 30px;
+    background: rgba(0, 128, 0, 0.432);
+}
+
+main .container .banner .slides {
+    max-width: 50%;
+}
+
+main .container .banner .slides .slide .avatar {
+    width: 485px;
+    height: auto;
+    border-radius: 50%;
+}
+
+main .container .banner .slides {
+    position: relative;
+}
+
+main .container .banner .slides .slide-content {
+    position: absolute;
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 20px;
+    bottom: -25px;
+    left: 10px;
+}
+
+main .container .banner .slides .slide-content h3 {
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+main .container .banner .slides .slide-content p {
+    font-weight: 300;
+    font-size: 14px;
+    color: #363535;
+    padding-bottom: 20px;
+}
+
+main .container .banner .slides .btn-next{
+    position: absolute;
+    top: 37%;
+    right: -5%;
+    background: #9499B7;
+    padding: 19px 20px;
+    border-radius: 50%;
+}
+
+/* section partener */
+.partner {
+    margin-top: 100px;
+}
+
+.partner h3 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.partner .company {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.partner .company img {
+    width: 88px;
+    height: auto;
+}
+
+/* section .teacher-learn */
+
+.teacher-learn {
+    margin-top: 100px;
+}
+
+.teacher-learn .title-grow {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.teacher-learn h2 {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 3.2rem;
+}
+
+.teacher-learn .info-teacher {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.teacher-learn .person-card {
+    width: 295px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 18px 18px 16px 16px;
+}
+
+
+.teacher-learn .person-card .card-info {
+    padding: 20px;
+    width: 295px;
 }
